@@ -1,0 +1,44 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <script type="text/javascript">
+            function closethisasap() {
+            document.forms["redirectpost"].submit();
+            }
+        </script>
+    </head>
+    
+    <body onload="closethisasap();">
+        <h1>Please wait you will be redirected soon to <br >Jazzcash Payment Page</h1>
+        <!-- for test -->
+        <!-- <form name="redirectpost" method="POST" action="https://sandbox.jazzcash.com.pk/CustomerPortal/transactionmanagement/merchantform/">  -->
+        <!-- for live -->
+        
+        <form name="redirectpost" method="POST" action="https://payments.jazzcash.com.pk/CustomerPortal/transactionmanagement/merchantform/">
+
+            <input type="hidden" name="pp_Version" value="<%= post_data['pp_Version'] %>">
+            <input type="hidden" name="pp_TxnType" value="<%= post_data['pp_TxnType'] %>">
+            <input type="hidden" name="pp_Language" value="<%= post_data['pp_Language'] %>">
+            <input type="hidden" name="pp_MerchantID" value="<%= post_data['pp_MerchantID'] %>">
+            <input type="hidden" name="pp_SubMerchantID" value="<%= post_data['pp_SubMerchantID'] %>">
+            <input type="hidden" name="pp_Password" value="<%= post_data['pp_Password'] %>">
+            <input type="hidden" name="pp_BankID" value="<%= post_data['pp_BankID'] %>">
+            <input type="hidden" name="pp_ProductID" value="<%= post_data['pp_ProductID'] %>">
+            <input type="hidden" name="pp_TxnRefNo" value="<%= post_data['pp_TxnRefNo'] %>">
+            <input type="hidden" name="pp_Amount" value="<%= post_data['pp_Amount'] %>">
+            <input type="hidden" name="pp_TxnCurrency" value="<%= post_data['pp_TxnCurrency'] %>">
+            <input type="hidden" name="pp_TxnDateTime" value="<%= post_data['pp_TxnDateTime'] %>">
+            <input type="hidden" name="pp_BillReference" value="<%= post_data['pp_BillReference'] %>">
+            <input type="hidden" name="pp_Description" value="<%= post_data['pp_Description'] %>">
+            <input type="hidden" name="pp_TxnExpiryDateTime" value="<%= post_data['pp_TxnExpiryDateTime'] %>">
+            <input type="hidden" name="pp_ReturnURL" value="<%= post_data['pp_ReturnURL'] %>">
+            <input type="hidden" name="pp_SecureHash" value="<%= post_data['pp_SecureHash'] %>">
+            <input type="hidden" name="ppmpf_1" value="<%= post_data['ppmpf_1'] %>">
+            <input type="hidden" name="ppmpf_2" value="<%= post_data['ppmpf_2'] %>">
+            <input type="hidden" name="ppmpf_3" value="<%= post_data['ppmpf_3'] %>">
+            <input type="hidden" name="ppmpf_4" value="<%= post_data['ppmpf_4'] %>">
+            <input type="hidden" name="ppmpf_5" value="<%= post_data['ppmpf_5'] %>">
+
+            <!-- -->
+        </form>
+    </body>
+</html>

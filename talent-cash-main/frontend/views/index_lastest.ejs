@@ -1,0 +1,683 @@
+<%-include('layouts/header') -%>
+
+<!-- **************** MAIN CONTENT START **************** -->
+<main class="over-all">
+  
+    <!-- Container START -->
+    <div class="container">
+      <div class="row g-4">
+  
+        <!-- Sidenav START -->
+        <div class="col-lg-3 col-md-2 col-sm-2 col-2 p-0">
+  
+          <!-- Advanced filter responsive toggler START -->
+          <!-- <div class="d-flex align-items-center d-lg-none">
+            <button class="border-0 bg-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSideNavbar" aria-controls="offcanvasSideNavbar">
+              <i class="btn btn-primary fw-bold fa-solid fa-sliders-h"></i>
+              <span class="h6 mb-0 fw-bold d-lg-none ms-2">My profile</span>
+            </button>
+          </div> -->
+          <!-- Advanced filter responsive toggler END -->
+          
+          <!-- Navbar START-->
+          <nav class="navbar navbar-expand mx-0"> 
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSideNavbar">
+              <!-- Offcanvas header -->
+              <div class="offcanvas-header">
+                <button type="button" class="btn-close text-reset ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+  
+              <!-- Offcanvas body -->
+              <div class="offcanvas-body d-block px-2 px-lg-0 ">
+                <!-- Card START -->
+                <div class="card overflow-hidden">
+                  <!-- Cover image -->
+                 
+                    <!-- Card body START -->
+                    <div class="card-body pt-15px">
+                      <div class="text-ali">
+                    
+  
+                    <!-- Divider -->
+                    
+  
+                    <!-- Side Nav START -->
+                    <ul class="nav nav-link-secondary flex-column fw-bold gap-2 nav_items">
+                      <li class="nav-item">
+                        <a class="nav-foryou" href="my-profile.html"> <svg xmlns="http://www.w3.org/2000/svg" width="25"
+                          height="25" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd"
+                            d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                          <path fill-rule="evenodd"
+                            d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                        </svg><span class="d-lg-block d-none d-md-none" style="margin: 0px 0px 0px 8px; line-height: 25px;">For You </span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-following" href="my-profile.html"> <svg xmlns="http://www.w3.org/2000/svg"
+                          width="25" height="25" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                          <path
+                            d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
+                        </svg><span class="d-lg-block d-none" style="margin: 0px 0px 0px 8px; line-height: 25px;">Following </span></a>
+                      </li>
+                      <p class="p-class col-md-block d-none"> Login Here to like vedios, and see comments</p>
+                      <div class="d-grid gap-2 d-md-block">
+                        <button class="btn btn-primary log_btn d-lg-block d-none d-md-none" type="button">Login</button>
+                      </div>
+                    </ul>
+                    <!-- Side Nav END -->
+                 
+                  <!-- Card body END -->
+                  <!-- Card footer -->
+                  <hr>
+                  <p class="suggest_account d-lg-block d-none d-md-none ">suggested accounts</p>
+                  <!-- Connection item START -->
+                  <div class="hstack gap-2 mb-3 mt-3">
+                    <!-- Avatar -->
+                    <div class="avatar">
+                      <a href="#!"><img class="avatar-img rounded-circle" src="/frontend/assets/images/avatar/jannat_mirza.jpeg" alt=""></a>
+                    </div>
+                    <!-- Title -->
+                    <div class="overflow-hidden d-lg-block d-none ">
+                      <a class="h6 mb-0" href="#!">Jannat Mirza </a>
+                      <p class="mb-0 small text-truncate">J M</p>
+                    </div>
+                    <!-- Button -->
+                  </div>
+                  <!-- Connection item END -->
+                  <!-- Connection item START -->
+                  <div class="hstack gap-2 mb-3">
+                    <!-- Avatar -->
+                    <div class="avatar">
+                      <a href="#!"><img class="avatar-img rounded-circle" src="/frontend/assets/images/avatar/kanwal.jpeg" alt=""></a>
+                    </div>
+                    <!-- Title -->
+                    <div class="overflow-hidden d-lg-block d-none">
+                      <a class="h6 mb-0" href="#!">Kanwal Aftab </a>
+                      <p class="mb-0 small text-truncate">Kanwaly</p>
+                    </div>
+                    <!-- Button -->
+                  </div>
+                  <!-- Connection item END -->
+                  <!-- Connection item START -->
+                  <div class="hstack gap-2 mb-3">
+                    <!-- Avatar -->
+                    <div class="avatar">
+                      <a href="#!"><img class="avatar-img rounded-circle" src="/frontend/assets/images/avatar/doll.jpeg" alt=""></a>
+                    </div>
+                    <!-- Title -->
+                    <div class="overflow-hidden d-lg-block d-none">
+                      <a class="h6 mb-0" href="#!">Alishba Anjum </a>
+                      <p class="mb-0 small text-truncate">Alishaba</p>
+                    </div>
+                    <!-- Button -->
+                  </div>
+                  <!-- Connection item END -->
+                  <!-- Connection item START -->
+                  <div class="hstack gap-2 mb-3">
+                    <!-- Avatar -->
+                    <div class="avatar">
+                      <a href="#!"><img class="avatar-img rounded-circle" src="/frontend/assets/images/avatar/muskan.jpeg" alt=""></a>
+                    </div>
+                    <!-- Title -->
+                    <div class="overflow-hidden d-lg-block d-none">
+                      <a class="h6 mb-0" href="#!">Muskan Khan </a>
+                      <p class="mb-0 small text-truncate">Khan Muskan</p>
+                    </div>
+                    <!-- Button -->
+                  </div>
+                  <!-- Connection item END -->
+                  <!-- Connection item START -->
+                  <div class="hstack gap-2 mb-3">
+                    <!-- Avatar -->
+                    <div class="avatar">
+                      <a href="#!"><img class="avatar-img rounded-circle" src="/frontend/assets/images/avatar/shifa.jpeg" alt=""></a>
+                    </div>
+                    <!-- Title -->
+                    <div class="overflow-hidden d-lg-block d-none">
+                      <a class="h6 mb-0" href="#!">Shifa001 </a>
+                      <p class="mb-0 small text-truncate">Atish🔥</p>
+                    </div>
+                    <!-- Button -->
+                  </div>
+                  <!-- Connection item END -->
+                  <!-- Connection item START -->
+                  <div class="hstack gap-2 mb-3">
+                    <!-- Avatar -->
+
+                    <!-- Title -->
+                   
+                    <!-- Button -->
+                  </div>
+                  <!-- Connection item END -->
+                  <p class="d-lg-block d-none d-md-none">See All</p>
+                   <hr>
+                  <p class="d-lg-block d-none d-md-none">Discovery</p>
+                  
+                  
+                </div>
+                  </div>
+                </div>
+                <!-- Card END -->
+  
+                <!-- Helper link START -->
+                <ul class="nav small mt-4  justify-content-start lh-1 d-lg-flex d-none d-md-none" ">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/about-us">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="settings.html">Settings</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://support.webestica.com/login">Support </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="docs/index.html">Docs </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="help.html">Help</a>
+                  </li>
+                  <li class="nav-item">
+                    <!-- <a class="nav-link" href="privacy-and-terms.html">Privacy & terms</a> -->
+                    <a class="nav-link" href="/terms-and-conditions">Privacy & terms</a>
+                  </li>
+                </ul>
+                <!-- Helper link END -->
+                <!-- Copyright -->
+                <p class="small text-center mt-1 d  d-lg-block d-none d-md-none">©2022 <a class="text-body" target="_blank" href="https://www.webestica.com/"> Webestica </a></p>
+              </div>
+            </div>
+          </nav>
+          <!-- Navbar END-->
+        </div>
+        <!-- Sidenav END -->
+  
+        <!-- Main content START -->
+        <div class="col-md-6 col-lg-6 col-9 vstack gap-4 main-feed">
+  
+          
+          
+
+
+
+            <%
+              if(reels){ 
+              reels.forEach(function(item){%> 
+                <!-- Card feed item START -->
+                <div class="card">
+                    <!-- Card header START -->
+                    <div class="card-header border-0 pb-0">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                        <!-- Avatar -->
+                        <div class="avatar avatar-story me-2">
+                            <a href="#!"> <img class="avatar-img rounded-circle" src="<%= item.user.profileImage ? item.user.profileImage : '/frontend/assets/images/female_Ex.png' %>" alt=""> </a>
+                        </div>
+                        <!-- Info -->
+                        
+                        <div>
+                            <div class="nav nav-divider">
+                            <h6 class="nav-item card-title mb-0"> <a href="#!"> <%= item.user.name %> </a></h6>
+                            </div>
+                            <p class="mb-0 small">Web Developer at Webestica</p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <!-- Card header END -->
+                    <!-- Card body START -->
+                    <div class="card-body">
+                    <!-- <p>I'm thrilled to share that I've completed a graduate certificate course in project management with the president's honor roll.</p> -->
+                    
+                    <!-- Video START -->
+                        <div class="card position-relative d-flex flex-row">
+                        <!-- Video image -->
+                        <div class="card-image">
+                        <div class="overflow-hidden fullscreen-video w-100">
+                            <!-- HTML video START -->
+                            <div class="player-wrapper card-img-top overflow-hidden">
+
+                            <video class="player-html" controls crossorigin="anonymous" muted="muted" loop autoplay poster="<%= item.song && item.song.image  ? api_base_url+item.song.image : '' %>">
+                                <source src="<%= api_base_url+item.video %>" type="video/mp4">
+                            </video>
+                            </div>
+                            <!-- HTML video END -->
+                        </div>
+                        </div>
+        
+                        <div class="card-buttons bottom-0 start-0 p-3  w-100">
+                            <!-- Favourites -->
+                        <span class="bg-dark bg-opacity-50 px-2 rounded text-white small ms-auto"><i class="fa-solid fa-heart"></i></span>
+                        <p><%= item.like %></p>
+                            
+                        <!-- Comments -->
+                        <span class="bg-dark bg-opacity-50 px-2 rounded text-white small ms-auto"><i class="fa-solid fa-comment"></i></span>
+                        <p><%= item.comment %></p>
+                            <!-- Shares -->
+                        <!-- <span class="bg-dark bg-opacity-50 px-2 rounded text-white small ms-auto"><i class="fa-solid fa-share"></i></span>
+                        <p>58</p> -->
+                        </div>
+                    
+                    </div>
+                    <!-- Video END -->
+                    </div>
+                    <!-- Card body END -->
+                </div>
+                <!-- Card feed item END -->
+                <hr>
+            <% }) }%>
+  
+            <!-- Load more button START -->
+            <!-- <a href="#!" role="button" class="btn btn-loader btn-primary-soft" data-bs-toggle="button" aria-pressed="true">
+              <span class="load-text"> Load more </span>
+              <div class="load-icon">
+                <div class="spinner-grow spinner-grow-sm" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </div>
+            </a> -->
+            <!-- Load more button END -->
+            <!-- <div id = 'video-div'></div> -->
+        </div>
+        <div id = 'video-div'></div>
+        <!-- Main content END -->
+  
+        <!-- Right sidebar START -->
+        <div class="col-lg-3">
+          
+        </div>
+        <!-- Right sidebar END -->
+  
+      </div> <!-- Row END -->
+    </div>
+    <!-- Container END -->
+  
+  </main>
+  <!-- **************** MAIN CONTENT END **************** -->
+
+  <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade animated bounce" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="card card_body text-center p-4 p-sm-5 p-md-5 p-lg-5">
+         
+            
+        <!-- Title -->
+       <h4 class="mb-2">Download Talent Cash App</h4>
+        
+        <!-- Form START -->
+        <form class="mt-sm-4" style="cursor: pointer;">
+          <!-- Email -->
+          
+          <!-- New password -->
+          <div class="mb-3 position-relative">
+            <!-- Password -->
+            <div class="input-group ">
+              <a href="">
+                <img src="/frontend/assets/images/app-store.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="mb-3 position-relative">
+            <div class="input-group ">
+              <a href="">
+                <img src="/frontend/assets/images/google-play.png" alt="">
+              </a>
+            </div>
+          </div>
+       
+           
+         
+          
+            <!-- Pswmeter -->
+          <hr>
+          <div class="card-body">
+            
+            <p class="card-text">By continuing, you agree to Talent-Cash Terms of Service and confirm that you have read Talent-Cash Privacy Policy.   </p>
+           
+          </div>
+      </form>
+      </div>
+      
+     
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<%-include('layouts/footer') -%>
+
+<script>
+  // App link modal
+  $(window).on('load', function(){
+    setTimeout(function(){
+      $('#exampleModal').modal('show')
+    },1000);
+  });
+// window.onload = function () {
+//     OpenBootstrapPopup();
+// };
+// function OpenBootstrapPopup() {
+//     $("#exampleModal").modal('show');
+// }
+
+window.addEventListener('load', videoScroll);
+window.addEventListener('scroll', videoScroll);
+
+function videoScroll() {
+  if ( document.querySelectorAll('video[autoplay]').length > 0) {
+    // alert();
+    var windowHeight = window.innerHeight,
+        videoEl = document.querySelectorAll('video[autoplay]');
+
+    for (var i = 0; i < videoEl.length; i++) {
+
+      var thisVideoEl = videoEl[i],
+          videoHeight = thisVideoEl.clientHeight,
+          videoClientRect = thisVideoEl.getBoundingClientRect().top;
+
+      if ( videoClientRect <= ( (windowHeight) - (videoHeight*.5) ) && videoClientRect >= ( 0 - ( videoHeight*.5 ) ) ) {
+        thisVideoEl.play();
+      } else {
+        thisVideoEl.pause();
+      }
+
+    }
+  }
+
+}
+
+
+  var axiosConfig = {
+    method: 'get',
+    url: 'https://talentcash.pk/reels/?start=1&limit=2&startDate=ALL&endDate=ALL',
+    headers: { 
+      'key': 'soft@12345'
+    }
+  };
+  
+  document.addEventListener("DOMContentLoaded", function() {
+  axios(axiosConfig)
+  .then(function (response) {
+    var result = response.data.reel;
+    console.log(result);
+//     var lengths = [result].map(function(word){
+//   //  return word.length
+//    console.log(word.reel);
+
+//  }) 
+
+// result.forEach((element,index) => {
+//     console.log(element[index]._id);
+// });
+
+for (let index = 0; index < result.length; ++index) {
+    const element = result[index]._id;
+
+        //var html = '<div class="col-md-6 col-lg-6 col-9 vstack gap-4 main-feed">';
+        // Card feed item START
+        html = '<div class="card">';
+        // <!-- Card header START -->
+        html += '<div class="card-header border-0 pb-0">';
+        html +=  '<div class="d-flex align-items-center justify-content-between">';
+        html +=  '<div class="d-flex align-items-center">';
+        // <!-- Avatar -->
+        html +=  '<div class="avatar avatar-story me-2">';
+        html +=  '<a href="#"> <img class="avatar-img rounded-circle" src="#" alt=""> </a>';
+        html +=  '</div>';
+        // <!-- Info -->
+        html += '<div>';
+        html += '<div class="nav nav-divider">';
+        html += '<h6 class="nav-item card-title mb-0"> <a href="#!"> Umar </a></h6>';
+        html += '</div>';
+        html += '<p class="mb-0 small">Web Developer at Webestica</p>';
+        html += '</div>';
+        html += '</div>';
+        html += '</div>';
+        html += '</div>';
+        // <!-- Card header END -->
+        // <!-- Card body START -->
+        html += '<div class="card-body">';
+        // <!-- Video START -->
+        html += '<div class="card position-relative d-flex flex-row">';
+        // <!-- Video image -->
+        html += '<div class="card-image">';
+        html += '<div class="overflow-hidden fullscreen-video w-100">';
+        // <!-- HTML video START -->
+        html += '<div class="player-wrapper card-img-top overflow-hidden">';
+        html += '<video class="player-html" controls crossorigin="anonymous" muted="muted" loop autoplay poster="#">';
+        html += '<source src="https://www.talentcash.pk/storage/1664368682287Savefb.App-1011381859523402-(1080p).mp4" type="video/mp4">';
+        html += '</video>';
+        html += '</div>';
+                  // <!-- HTML video END -->
+        html += '</div>';
+        html += '</div>';
+        html += '<div class="card-buttons bottom-0 start-0 p-3  w-100">';
+        // <!-- Favourites -->
+        html += '<span class="bg-dark bg-opacity-50 px-2 rounded text-white small ms-auto"><i class="fa-solid fa-heart"></i></span>';
+        html += '<p>10</p>';
+        // <!-- Comments -->
+        html += '<span class="bg-dark bg-opacity-50 px-2 rounded text-white small ms-auto"><i class="fa-solid fa-comment"></i></span>';
+        html += '<p>5</p>';
+        // <!-- Shares -->
+        html += '</div>';
+        html += '</div>';
+        // <!-- Video END -->
+        html += '</div>';
+        // <!-- Card body END -->
+        html += '</div>';
+        // <!-- Card feed item END -->
+        html += '<hr>';
+        //html += '</div>';
+        //document.write(html);
+        //videoPlyr();
+        e.init();
+        div = document.getElementById('video-div');
+        //div = document.querySelector('.main-feed');//document.getElementsByClassName('main-feed');
+        // alert(div)
+        div.innerHTML += html;
+        //div.innerHTML(html);
+
+    console.log(element);
+}
+    
+    // alert(result);
+    // console.log(result);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+});
+
+    // function videoPly() {
+    //   var vdp = document.querySelector('.player-wrapper');
+    //   //alert(vdp);
+    //   if (vdp) {
+    //     // youtube
+    //     // const playerYoutube = Plyr.setup('.player-youtube', {});
+    //     // window.player = playerYoutube;
+
+    //     // // Vimeo
+    //     // const playerVimeo = Plyr.setup('.player-vimeo', {});
+    //     // window.player = playerVimeo;
+        
+    //     // HTML video
+    //     const playerHtmlvideo = Plyr.setup('.player-html', {
+    //       captions: {active: true}
+    //     });
+    //     window.player = playerHtmlvideo;
+
+    //     // HTML audio
+    //     // const playerHtmlaudio = Plyr.setup('.player-audio', {});
+    //     // window.player = playerHtmlaudio;
+    //   }
+    // }
+
+
+    var e = {
+      
+		init: function () {
+				e.videoPlyr()
+		},
+		isVariableDefined: function (el) {
+				return typeof !!el && (el) != 'undefined' && el != null;
+		},
+		getParents: function (el, selector, filter) {
+				const result = [];
+				const matchesSelector = el.matches || el.webkitMatchesSelector || el.mozMatchesSelector || el.msMatchesSelector;
+
+				// match start from parent
+				el = el.parentElement;
+				while (el && !matchesSelector.call(el, selector)) {
+						if (!filter) {
+								if (selector) {
+										if (matchesSelector.call(el, selector)) {
+												return result.push(el);
+										}
+								} else {
+										result.push(el);
+								}
+						} else {
+								if (matchesSelector.call(el, filter)) {
+										result.push(el);
+								}
+						}
+						el = el.parentElement;
+						if (e.isVariableDefined(el)) {
+								if (matchesSelector.call(el, selector)) {
+										return el;
+								}
+						}
+
+				}
+				return result;
+		},
+		getNextSiblings: function (el, selector, filter) {
+				let sibs = [];
+				let nextElem = el.parentNode.firstChild;
+				const matchesSelector = el.matches || el.webkitMatchesSelector || el.mozMatchesSelector || el.msMatchesSelector;
+				do {
+						if (nextElem.nodeType === 3) continue; // ignore text nodes
+						if (nextElem === el) continue; // ignore elem of target
+						if (nextElem === el.nextElementSibling) {
+								if ((!filter || filter(el))) {
+										if (selector) {
+												if (matchesSelector.call(nextElem, selector)) {
+														return nextElem;
+												}
+										} else {
+												sibs.push(nextElem);
+										}
+										el = nextElem;
+
+								}
+						}
+				} while (nextElem = nextElem.nextSibling)
+				return sibs;
+		},
+		on: function (selectors, type, listener) {
+				document.addEventListener("DOMContentLoaded", () => {
+						if (!(selectors instanceof HTMLElement) && selectors !== null) {
+								selectors = document.querySelector(selectors);
+						}
+						selectors.addEventListener(type, listener);
+				});
+		},
+		onAll: function (selectors, type, listener) {
+				document.addEventListener("DOMContentLoaded", () => {
+						document.querySelectorAll(selectors).forEach((element) => {
+								if (type.indexOf(',') > -1) {
+										let types = type.split(',');
+										types.forEach((type) => {
+												element.addEventListener(type, listener);
+										});
+								} else {
+										element.addEventListener(type, listener);
+								}
+
+
+						});
+				});
+		},
+		removeClass: function (selectors, className) {
+				if (!(selectors instanceof HTMLElement) && selectors !== null) {
+						selectors = document.querySelector(selectors);
+				}
+				if (e.isVariableDefined(selectors)) {
+						selectors.removeClass(className);
+				}
+		},
+		removeAllClass: function (selectors, className) {
+				if (e.isVariableDefined(selectors) && (selectors instanceof HTMLElement)) {
+						document.querySelectorAll(selectors).forEach((element) => {
+								element.removeClass(className);
+						});
+				}
+
+		},
+		toggleClass: function (selectors, className) {
+				if (!(selectors instanceof HTMLElement) && selectors !== null) {
+						selectors = document.querySelector(selectors);
+				}
+				if (e.isVariableDefined(selectors)) {
+						selectors.toggleClass(className);
+				}
+		},
+		toggleAllClass: function (selectors, className) {
+				if (e.isVariableDefined(selectors)  && (selectors instanceof HTMLElement)) {
+						document.querySelectorAll(selectors).forEach((element) => {
+								element.toggleClass(className);
+						});
+				}
+		},
+		addClass: function (selectors, className) {
+				if (!(selectors instanceof HTMLElement) && selectors !== null) {
+						selectors = document.querySelector(selectors);
+				}
+				if (e.isVariableDefined(selectors)) {
+						selectors.addClass(className);
+				}
+		},
+		select: function (selectors) {
+				return document.querySelector(selectors);
+		},
+		selectAll: function (selectors) {
+				return document.querySelectorAll(selectors);
+		},
+
+    // START: 06 Video player
+    videoPlyr: function () {
+      var vdp = e.select('.player-wrapper');
+      
+      if (e.isVariableDefined(vdp)) {
+        //alert(e.isVariableDefined(vdp));
+        // youtube
+        const playerYoutube = Plyr.setup('.player-youtube', {});
+        window.player = playerYoutube;
+
+        // Vimeo
+        const playerVimeo = Plyr.setup('.player-vimeo', {});
+        window.player = playerVimeo;
+        
+        // HTML video
+        const playerHtmlvideo = Plyr.setup('.player-html', {
+          captions: {active: true}
+        });
+        window.player = playerHtmlvideo;
+
+        // HTML audio
+        const playerHtmlaudio = Plyr.setup('.player-audio', {});
+        window.player = playerHtmlaudio;
+      }
+    },
+    // END: Video player
+
+		
+};
+
+</script>

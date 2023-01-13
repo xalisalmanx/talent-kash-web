@@ -1,0 +1,87 @@
+<%
+  if(typeof app_user != "undefined" && app_user !=''){
+%>
+<%-include('layouts/header',{app_user:app_user}) -%>
+<%
+  }else
+  { 
+%>
+<%-include('layouts/header') -%>
+<%
+  }
+%>
+
+<main>
+    <!-- Container START -->
+    <div class="container">
+      <div class="row">
+        <!-- Main content START -->
+        <div class="col-lg-12">
+          <!-- Privacy & terms START -->
+          <div class="">
+            <div class="card-header">
+              <h1 class="card-title h4 mb-0">About Us</h1>
+            </div>
+            <div class="card-body">
+              <!-- Title -->
+              <h5>Introduction</h5>
+              <p>Talent Cash is a platform where you can not only make money out of your talent but also find the perfect dose of entertainment and buy talent for any task that you need.</p>
+              <p>The app creates a perfect opportunity for everyone to download the app, showcase their hidden talents and earn money from it. Talent Cash welcomes all users with diverse backgrounds to add something unique and full of entertainment.</p>
+              <!-- <hr class="mt-2 mb-4"> -->
+              <br>
+              <!-- Introduction -->
+              <h5>Vision</h5>
+             <p>Talent Cash aims to provide and promote the hidden talent of Pakistan and empower them to earn more than just money. The app provides a unique experience of entertainment where it introduces talents that can be utilized by other people who are using the App. It is a platform where each person belongs, regardless of gender, ethnicity, and socio-economic background. It is a medium where each trend and diverse aspect of our country is celebrated.</p>
+              <!-- Divider -->
+              <!-- <hr class="mt-2 mb-4"> -->
+              <br>
+              <!-- Services -->
+              <h5>Mission</h5>
+              <p>Talent Cash aims to make everyday life not only easy but also fun. It promotes the diversity of cultures that our country has and aims to recognize their talents. It also gives a chance to people of every age to embrace their talent and show their uniqueness on a larger scale.</p>
+              
+              <br>
+              <br>
+            </div>
+  
+          </div>
+          <!-- Privacy & terms END -->
+        </div>
+      </div> <!-- Row END -->
+    </div>
+    <!-- Container END -->
+</main>
+
+<!-- **************** MAIN CONTENT END **************** -->
+
+<% if(app_user == 1){ } else { %> 
+  <!-- footer START -->
+  <footer class="bg-mode py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <!-- Footer nav START -->
+            <ul class="nav lh-1">
+              <li class="nav-item">
+                <a class="nav-link" href="/about-us">About</a>
+              </li>
+         
+              <li class="nav-item">
+                <a class="nav-link" href="/terms-and-conditions">Terms &amp; Conditions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/privacy-policy">Privacy Policy</a>
+              </li>
+            </ul>
+            <!-- Footer nav START -->
+          </div>
+          <div class="col-lg-6 ">
+            <!-- Copyright START -->
+            <p class="text-end mb-0">©2022 <a class="text-body" target="_blank" href="/">Talent Cash. </a>All rights reserved.</p>
+            <!-- Copyright END -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <% } %>
+    <!-- footer END -->
+  <%-include('layouts/footer') -%>
