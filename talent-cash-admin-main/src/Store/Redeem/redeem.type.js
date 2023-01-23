@@ -1,0 +1,3 @@
+export const GET_REDEEM_REQUEST = "GET_REDEEM_REQUEST";
+
+export const REDEEM_ACTION = "REDEEM_ACTION";

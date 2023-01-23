@@ -2,6 +2,7 @@
 const User = require("./user.model");
 const Follower = require("../Follower/follower.model");
 const Block = require("../block/block.model"); //blocked by other profile
+const Report = require("../reportUser/report.model"); //blocked by other profile
 const Wallet = require("../wallet/wallet.model");
 //fs
 const fs = require("fs");
@@ -321,7 +322,7 @@ exports.updateProfile = async (req, res) => {
     }
 
     req.body.name = clean(req.body.name);
-    req.body.username = cleanAndCheckUsername(req.body.username);
+    req.body.username =  req.body.username ? cleanAndCheckUsername(req.body.username) : '' ;
 
     user.name = req.body.name && req.body.name;
     user.username = req.body.username && req.body.username;
@@ -424,6 +425,10 @@ exports.getOtherProfile = async (req, res) => {
       $and: [{ fromUserId: fromUser._id }, { toUserId: toUser._id }],
     });
 
+    const isReportedbyYou = await Report.exists({
+      $and: [{ fromUserId: fromUser._id }, { toUserId: toUser._id }],
+    });
+
     const user = await User.aggregate([
       {
         $match: { _id: toUser._id },
@@ -448,7 +453,7 @@ exports.getOtherProfile = async (req, res) => {
       //   },
       // },
       {
-        $addFields: { isFollow: isFollow , isBlockedbyYou: isBlockedbyYou },
+        $addFields: { isFollow: isFollow , isBlockedbyYou: isBlockedbyYou , isReportedbyYou: isReportedbyYou },
       },
     ]);
     return res
@@ -1329,6 +1334,7 @@ exports.userDeleteAccount = async (req, res) => {
 };
 
 function clean(name){
+  console.log(name);
   return name.replace(/[^A-Z0-9]+/ig, " ");
 }
 function cleanAndCheckUsername(name){

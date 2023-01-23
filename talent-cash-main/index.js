@@ -129,6 +129,9 @@ app.use("/orderCoin", orderCoin);
 //block
 const block = require("./server/block/block.route");
 app.use("/block", block);
+//Report User
+const report = require("./server/reportUser/report.route");
+app.use("/report", report);
 
 //Frontend
 app.use(express.static(path.join(__dirname, '/public')));
